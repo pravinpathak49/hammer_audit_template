@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Purchase - HameroAudit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header-area overlay">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">Hamero Audit</a>
+                <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <span class="menu-icon-bar"></span><span class="menu-icon-bar"></span> <span class="menu-icon-bar"></span>
+                </button>
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                       <li><a class="nav-link" href="../index.html">Home</a></li>
+                        <li><a class="nav-link" href="purchase.html">Record Purchase</a></li>
+                        <li><a class="nav-link" href="sales.html">Record Sales</a></li>
+                        <li><a class="nav-link" href="view_sales.html">view Sales</a></li>
+                        <li><a class="nav-link" href="view_purchase.html">view Purchase</a></li>
+                        <li><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Purchase Form Section -->
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Record Purchase</h2>
+        <form action="purchase.php" method="POST">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="purchase_date">Purchase Date</label>
+                    <input type="date" class="form-control" id="purchase_date" name="purchase_date" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="supplier_name">Supplier Name</label>
+                    <input type="text" class="form-control" id="supplier_name" name="supplier_name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="supplier_pan">Supplier PAN</label>
+                    <input type="text" class="form-control" id="supplier_pan" name="supplier_pan" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="product_detail">Product Detail</label>
+                    <input type="text" class="form-control" id="product_detail" name="product_detail" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="product_grouping">Product Grouping</label>
+                    <input type="text" class="form-control" id="product_grouping" name="product_grouping" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="units_of_product">Units of Product</label>
+                    <input type="text" class="form-control" id="units_of_product" name="units_of_product" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="product_qty">Product Quantity</label>
+                    <input type="number" class="form-control" id="product_qty" name="product_qty" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="converted_unit">Converted Unit</label>
+                    <input type="text" class="form-control" id="converted_unit" name="converted_unit" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="product_type">Product Type</label>
+                    <input type="text" class="form-control" id="product_type" name="product_type" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="product_rate">Product Rate</label>
+                    <input type="number" class="form-control" id="product_rate" name="product_rate" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="non_taxable_amount">Non-Taxable Amount</label>
+                    <input type="number" class="form-control" id="non_taxable_amount" name="non_taxable_amount" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="taxable_amount">Taxable Amount</label>
+                    <input type="number" class="form-control" id="taxable_amount" name="taxable_amount" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="vat">VAT</label>
+                    <input type="number" class="form-control" id="vat" name="vat" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="total_amount">Total Amount</label>
+                    <input type="number" class="form-control" id="total_amount" name="total_amount" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 HameroAudit. All rights reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-dark">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="text-dark">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

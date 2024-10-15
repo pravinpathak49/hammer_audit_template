@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f9fc;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: 500;
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+        .btn-custom {
+            background-color: #5bc0de;
+            border-color: #5bc0de;
+            color: #fff;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: 500;
+        }
+        .btn-custom:hover {
+            background-color: #46a2c0;
+            border-color: #46a2c0;
+        }
+        .form-group label {
+            font-weight: 500;
+            color: #555;
+        }
+        .remember-me {
+            font-weight: 400;
+            font-size: 0.9rem;
+        }
+        .forgot-password {
+            font-weight: 500;
+            color: #5bc0de;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-area overlay">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">Hamero Audit</a>
+                <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <span class="menu-icon-bar"></span><span class="menu-icon-bar"></span> <span class="menu-icon-bar"></span>
+                </button>
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                       <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Login Form -->
+    <div class="login-form">
+        <h2>Login</h2>
+        <form>
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Remember Me Checkbox -->
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label remember-me" for="rememberMe">Remember Me</label>
+            </div>
+
+            <!-- Forgot Password Link -->
+            <div class="form-group text-right">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-custom">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
